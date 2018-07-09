@@ -1,4 +1,7 @@
 class Costume < ActiveRecord::Base
+
+  def initialize(name, price, size, image_url)
+  end
   
 end
 
