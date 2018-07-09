@@ -1,11 +1,11 @@
 class CreateCostumes < ActiveRecord::Migration
 
-  def initialize(name, price, size, image_url)
+  def change
     create_table :costumes |t|
     t.string :name
     t.integer :price
     t.integer :size
-    t.string :image_url    
+    t.string :image_url
   end
 end
 
