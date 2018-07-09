@@ -1,12 +1,12 @@
-class CreateCostumes < ActiveRecord::Migration[5.1]
-  def change
-    create_table :costumes do |t|
-      t.string :name
-      t.price :integer
-      t.size :integer
-      t.string :image_url
-    end
-  end  
+class CreateCostumes < ActiveRecord::Migration
+
+  def initialize(name, price, size, image_url)
+    create_table :costumes |t|
+    t.string :name
+    t.integer :price
+    t.integer :size
+    t.string :image_url    
+  end
 end
 
 # Create a class and inherit from ActiveRecord::Migration
